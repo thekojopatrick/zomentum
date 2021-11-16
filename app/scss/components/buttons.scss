@@ -1,0 +1,20 @@
+@use "../util" as *;
+
+/*=============== BUTTON ===============*/
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    background: transparent;
+
+    &--outline {
+        color: var(--primary-color);
+        border: solid 1px currentColor;
+        padding: rem(12) rem(23);
+
+        &:hover {
+            color: var(--secondary-color);
+        }
+    }
+}

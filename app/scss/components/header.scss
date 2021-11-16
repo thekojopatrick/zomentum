@@ -1,0 +1,53 @@
+@use "../util" as *;
+
+/*=============== HEADER ===============*/
+.header {
+    width: 100%;
+}
+
+/*=============== NAV ===============*/
+.nav {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+        img {
+            width: rem(200);
+        }
+    }
+    &__close {
+        display: none;
+    }
+    &__menu {
+    }
+    &__list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        text-decoration: none;
+        margin: var(--m-0-5);
+        padding: var(--m-0-5);
+    }
+    &__link {
+        color: var(--text-color);
+        font-weight: var(--font-medium);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.03em;
+        transition: 0.4s;
+
+        &:hover {
+            color: var(--primary-color);
+        }
+
+        &-icon {
+            font-size: rem(16);
+            margin-right: var(--m-0-5);
+        }
+    }
+}
