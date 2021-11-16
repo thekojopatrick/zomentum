@@ -1,0 +1,25 @@
+@use "../util" as *;
+/*============== HERO ===============*/
+
+.hero {
+    background: var(--bg-default);
+    color: var(--white);
+
+    &__container {
+        height: rem(540);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__content {
+        text-align: center;
+        width: rem(789);
+    }
+
+    &__button {
+        color: var(--white);
+        background: var(--bg-dark);
+        padding: rem(16) rem(25);
+        margin-top: rem(32);
+    }
+}

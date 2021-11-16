@@ -2,19 +2,21 @@
 
 /*=============== BUTTON ===============*/
 .button {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
+    text-align: center;
     align-items: center;
+    border: none;
     cursor: pointer;
     background: transparent;
 
     &--outline {
-        color: var(--primary-color);
+        color: var(--bg-default) !important;
         border: solid 1px currentColor;
-        padding: rem(12) rem(23);
+        padding: rem(12) rem(24);
 
         &:hover {
-            color: var(--secondary-color);
+            color: var(--text-color);
         }
     }
 }
