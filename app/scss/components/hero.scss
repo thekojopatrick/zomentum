@@ -2,38 +2,38 @@
 /*============== HERO ===============*/
 
 .hero {
-    background: var(--bg-default);
-    color: var(--white);
-    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
-    display: grid;
-    grid-template-columns: repeat(12, minmax(1fr, 7.5rem));
-    grid-template-rows: repeat(1fr, auto);
+	background: var(--bg-default);
+	color: var(--white);
+	clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+	display: grid;
+	grid-template-columns: repeat(12, minmax(1fr, 7.5rem));
+	grid-template-rows: repeat(1fr, auto);
 
-    &__container {
-        height: rem(540);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    &__content {
-        text-align: center;
-        width: rem(789);
-    }
+	&__container {
+		height: rem(540);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__content {
+		text-align: center;
+		width: rem(789);
+	}
 
-    &__button {
-        color: var(--white);
-        background: var(--bg-dark);
-        padding: rem(16) rem(25);
-        margin-top: rem(32);
-    }
+	&__button {
+		color: var(--white);
+		background: var(--bg-dark);
+		padding: rem(16) rem(25);
+		margin-top: rem(32);
+	}
 
-    &__image {
-        mix-blend-mode: luminosity;
-        display: none;
-        &--right {
-        }
+	&__image {
+		mix-blend-mode: luminosity;
+		display: none;
+		&--right {
+		}
 
-        &--left {
-        }
-    }
+		&--left {
+		}
+	}
 }

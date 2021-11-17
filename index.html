@@ -1,101 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--=============== REMIX ICONS ===============-->
-        <link
-            href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-            rel="stylesheet"
-        />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--=============== CSS ==================-->
-        <link rel="stylesheet" href="/dist/style.css" />
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
 
-        <!--=============== ALL JS ===============-->
-        <script defer src="/dist/script.js"></script>
+    <!--=============== CSS ==================-->
+    <link rel="stylesheet" href="/dist/style.css" />
 
-        <title>Zomentum Website - Kojopatrick</title>
-    </head>
-    <body>
-        <!--================= HEADER =================-->
-        <header class="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                    <img src="app/img/logo.svg" alt="Zomentum" />
-                </a>
+    <!--=============== ALL JS ===============-->
+    <script defer src="/dist/script.js"></script>
 
-                <div class="nav__menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#features" class="nav__link">Features</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#integrations" class="nav__link"
-                                >Integrations</a
-                            >
-                        </li>
-                        <li class="nav__item">
-                            <a href="#pricing" class="nav__link">Pricing</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#company" class="nav__link">Company</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#blog" class="nav__link">Blog</a>
-                        </li>
-                        <li class="nav__item">
-                            <a
-                                href="#getDemo"
-                                class="nav__link button button--outline"
-                                >Get a Demo</a
-                            >
-                        </li>
-                        <li class="nav__item">
-                            <a href="#login" class="nav__link">
-                                <i class="ri-user-line nav__link-icon"></i>Login
+    <title>Zomentum Website - Kojopatrick</title>
+</head>
+
+<body>
+    <!--================= HEADER =================-->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="app/img/logo.svg" alt="Zomentum" />
+            </a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#features" class="nav__link">Features</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#integrations" class="nav__link">Integrations</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#pricing" class="nav__link">Pricing</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#company" class="nav__link">Company</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#blog" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#getDemo" class="nav__link button button--outline">Get a Demo</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#login" class="nav__link"> <i class="ri-user-line nav__link-icon"></i>Login </a>
+                    </li>
+                </ul>
+
+                <div class="nav__close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--============== HERO ===============-->
+        <section class="hero">
+            <img class="hero__image hero__image--left" src="app/img/hero-image-left.svg" alt="person-left" />
+
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Find the right partners to <br />fuel your business growth</h1>
+                    <p class="hero__description">
+                        Join a vibrant community of MSPs to forge long-lasting relationships with partners that help you
+                        create
+                        excellent customer experiences
+                    </p>
+                    <a href="#register" class="button hero__button">Register now</a>
+                </div>
+            </div>
+
+            <img class="hero__image hero__image--right" src="app/img/hero-image-right.svg" alt="person-right" />
+        </section>
+
+        <!--============== ABOUT ===============-->
+        <section class="about Section">
+            <img class="about__image about__image--left" src="app/img/triangle-left.svg" alt="person-left" />
+
+            <div class="about__container container">
+                <h2 class="section__title about__title">List. Sell. Grow</h2>
+
+                <div class="about__content">
+                    <div class="about__card">
+                        <img class="about__card-image" src="app/img/platforms-image.svg" alt="platforms" />
+                        <p class="about__card-description">Be a part of the only All-In-One platform for IT services</p>
+                    </div>
+                    <div class="about__card">
+                        <img class="about__card-image" src="app/img/customer-image.svg" alt="customers" />
+                        <p class="about__card-description">Come closer to finding your next customer</p>
+                    </div>
+                    <div class="about__card">
+                        <img class="about__card-image" src="app/img/grow-business-image.svg" alt="grow business" />
+                        <p class="about__card-description">Grow your business with a single click</p>
+                    </div>
+                </div>
+            </div>
+
+            <img class="about__image about__image--right" src="app/img/triangle-right.svg" alt="person-right" />
+        </section>
+
+        <!--============== FEATURES ===============-->
+        <section class="features section">
+            <div class="features__container container">
+                <div class="features__content">
+                    <article class="features__section">
+                        <img src="app/img/channel-image.svg" alt="channels" />
+                        <div class="features__details">
+                            <h3 class="features__details-title">Your channel program on steroids</h3>
+                            <p class="features__details-description">
+                                Tired of finding MSPs that can help you boost your channel sales? You’re in luck,
+                                because they’re all
+                                here.
+                            </p>
+                            <a href="#" class="button feature__details-button">
+                                Signup now
+                                <i class="ri-arrow-right-line"></i>
                             </a>
-                        </li>
-                    </ul>
-
-                    <div class="nav__close">
-                        <i class="ri-close-line"></i>
-                    </div>
+                        </div>
+                    </article>
+                    <article class="features__section">
+                        <img src="app/img/vendor-image.svg" alt="channels" />
+                        <div class="features__details">
+                            <h3 class="features__details-title">Become the vendor everyone wants to buy from</h3>
+                            <p class="features__details-description">
+                                Gain brand authority and visibility with the help of the largest IT service ecosystem.
+                                Find customers
+                                who are looking for your solution right now!
+                            </p>
+                            <a href="#" class="button feature__details-button">
+                                Signup now
+                                <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="features__section">
+                        <img src="app/img/salesman-image.svg" alt="channels" />
+                        <div class="features__details">
+                            <h3 class="features__details-title">It’s like having Your best Salesman on autopilot</h3>
+                            <p class="features__details-description">
+                                Share collaterals and documents that are automatically branded. Leverage a rich partner
+                                network that
+                                sells your solution exactly the way your best salesman would.
+                            </p>
+                            <a href="#" class="button feature__details-button">
+                                Signup now
+                                <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="features__section">
+                        <img src="app/img/performance-image.svg" alt="channels" />
+                        <div class="features__details">
+                            <h3 class="features__details-title">Track your channel performance</h3>
+                            <p class="features__details-description">
+                                Monitor the health and revenue of your channel program and streamline your campaign to
+                                win more
+                                customers within Zomentum.
+                            </p>
+                            <a href="#" class="button feature__details-button">
+                                Signup now
+                                <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="features__section">
+                        <img src="app/img/playbook-image.svg" alt="channels" />
+                        <div class="features__details">
+                            <h3 class="features__details-title">Get The best version of Your sales playbook</h3>
+                            <p class="features__details-description">
+                                Gather insights about top channel sellers and find out what pitch and collaterals ensure
+                                maximum
+                                profitability. Win happy customers with an optimized sales playbook.
+                            </p>
+                            <a href="#" class="button feature__details-button">
+                                Signup now
+                                <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </article>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </section>
+    </main>
 
-        <main class="main">
-            <!--============== HERO ===============-->
-            <section class="hero">
-                <img
-                    class="hero__image hero__image--left"
-                    src="app/img/hero-image-left.svg"
-                    alt="person-left"
-                />
-                <div class="hero__container container">
-                    <div class="hero__content">
-                        <h1 class="hero__title">
-                            Find the right partners to <br />fuel your business
-                            growth
-                        </h1>
-                        <p class="hero__description">
-                            Join a vibrant community of MSPs to forge
-                            long-lasting relationships with partners that help
-                            you create excellent customer experiences
-                        </p>
-                        <a href="#register" class="button hero__button"
-                            >Register now</a
-                        >
-                    </div>
-                </div>
-                <img
-                    class="hero__image hero__image--right"
-                    src="app/img/hero-image-right.svg"
-                    alt="person-right"
-                />
-            </section>
-        </main>
-    </body>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__contianer container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">Products</h3>
+                <ul class="footer__data">
+                    <li class="footer__information">Features</li>
+                    <li class="footer__information">Pricing</li>
+                    <li class="footer__information">Integrations</li>
+                    <li class="footer__information">Product</li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Company</h3>
+                <ul class="footer__data">
+                    <li class="footer__information">About us</li>
+                    <li class="footer__information">Contact us</li>
+                    <li class="footer__information">Submit a ticket</li>
+                    <li class="footer__information">Privacy policy</li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Users</h3>
+                <ul class="footer__data">
+                    <li class="footer__information">Login</li>
+                    <li class="footer__information">Get a demo</li>
+                    <li class="footer__information">Talk to us</li>
+                    <li class="footer__information">Terms & conditions</li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Guides</h3>
+                <ul class="footer__data">
+                    <li class="footer__information">MSP</li>
+                    <li class="footer__information">MSP Sales</li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Contact Us</h3>
+                <ul class="footer__data">
+                    <li class="footer__information">Address</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169;Pactora Inc. All rights reserved.</p>
+    </footer>
+</body>
+
 </html>

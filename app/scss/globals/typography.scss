@@ -3,25 +3,25 @@
 h1,
 h2,
 h3 {
-    margin: 0;
-    line-height: 1.1;
+	margin: 0;
+	line-height: 1.1;
 }
 
 a,
 a:visited,
 a:active {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .hero {
-    &__title {
-        font-size: var(--big-font-size);
-        font-weight: var(--font-medium);
-        line-height: rem(65);
-    }
+	&__title {
+		font-size: var(--big-font-size);
+		font-weight: var(--font-medium);
+		line-height: rem(65);
+	}
 
-    &__description {
-        font-size: var(--normal-font-size);
-        line-height: rem(30);
-    }
+	&__description {
+		font-size: var(--normal-font-size);
+		line-height: rem(30);
+	}
 }
