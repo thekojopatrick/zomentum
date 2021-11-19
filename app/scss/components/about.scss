@@ -1,0 +1,43 @@
+@use "../util" as *;
+/*============== ABOUT ===============*/
+
+.about {
+	background: var(--bg-light);
+	_display: grid;
+	margin-top: rem(-60);
+	height: rem(561);
+
+	&__container {
+		text-align: center;
+		padding: rem(24);
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: var(--m-2-5);
+	}
+
+	&__card {
+		width: rem(253);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		&-image {
+			width: rem(100);
+			height: rem(100);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50vh;
+
+			img {
+				width: rem(48);
+				height: rem(48);
+			}
+		}
+	}
+}

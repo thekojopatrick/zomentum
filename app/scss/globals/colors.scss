@@ -1,15 +1,28 @@
 :root {
-    /*========= Colors ==========*/
-    /*Color mode HSL(hue, saturation, lightness)*/
-    --hue: 152;
-    --white: hsl(0, 0%, 100%);
-    --black: hsl(0, 0%, 0%);
-    --primary-color: hsla(221, 99%, 59%, 1);
-    --secondary-color: hsla(224, 100%, 9%, 1);
-    --tertiary-color: hsla(0, 0%, 9%, 1);
-    --bg-light: hsla(151, 100%, 50%, 0.08);
-    --title-color: var(--tertiary-color);
-    --text-color: var(--secondary-color);
-    --bg-dark: var(--black);
-    --bg-default: var(--primary-color);
+	/*========= Colors ==========*/
+	/*Color mode HSL(hue, saturation, lightness)*/
+	--hue: 152;
+	--white: hsl(0, 0%, 100%);
+	--black: hsl(0, 0%, 0%);
+	--dark-blue: hsla(0, 0%, 9%, 1);
+	--primary-color: hsla(221, 99%, 59%, 1);
+	--primary-color-light: hsla(221, 99%, 59%, 0.1);
+	--secondary-color: hsla(224, 100%, 9%, 1);
+	--secondary-color-light: hsla(224, 100%, 9%, 0.1);
+	--tertiary-color: hsla(93, 98%, 47%, 1);
+	--tertiary-color-light: hsla(93, 98%, 47%, 0.2);
+	--bg-light: hsla(151, 100%, 50%, 0.08);
+	--title-color: var(--dark-blue);
+	--text-color: var(--secondary-color);
+	--bg-dark: var(--black);
+	--bg-default: var(--primary-color);
+}
+
+.bg {
+	&-opacity-blue {
+		background: var(--primary-color-light);
+	}
+	&-opacity-green {
+		background: var(--tertiary-color-light);
+	}
 }

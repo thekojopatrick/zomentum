@@ -25,3 +25,19 @@ a:active {
 		line-height: rem(30);
 	}
 }
+
+.about {
+	&__title {
+		font-size: var(--h1-font-size);
+		font-weight: var(--font-medium);
+		line-height: rem(51);
+		letter-spacing: var(--spacing-big);
+	}
+
+	&__card-description {
+		font-size: var(--normal-font-size);
+		line-height: rem(27);
+		letter-spacing: var(--spacing-small);
+		margin: rem(24) 0;
+	}
+}

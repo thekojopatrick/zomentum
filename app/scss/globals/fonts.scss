@@ -19,7 +19,7 @@
 	// Responsive typography
 	@media screen and (min-width: 968px) {
 		--big-font-size: 3rem;
-		--h1-font-size: 2.25rem;
+		--h1-font-size: 2.5rem;
 		--h2-font-size: 1.5rem;
 		--h3-font-size: 1.25rem;
 		--normal-font-size: 1rem;
@@ -30,6 +30,10 @@
 	/*========== Font weight ==========*/
 	--font-medium: 500;
 	--font-semi-bold: 600;
+
+	/*========== Letter Spacing ==========*/
+	--spacing-big:0.02em;
+	--spacing-small:0.01em;
 
 	/*========== Margenes ==========*/
 	/*.5rem = 8px | 1rem = 16px ...*/
