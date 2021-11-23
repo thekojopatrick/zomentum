@@ -1,0 +1,29 @@
+@use "../util/" as *;
+
+/*=============== FOOTER ===============*/
+
+.footer {
+	background: var(--bg-dark);
+	height: rem(400);
+	width: 100%;
+	padding: rem(64) 0;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		gap: rem(24);
+		flex-wrap: wrap;
+		margin-top: rem(48);
+	}
+
+	&__data {
+		margin: rem(24) 0;
+		display: flex;
+		flex-direction: column;
+		gap: rem(10);
+	}
+
+	&__note {
+		margin-top: rem(48);
+	}
+}

@@ -58,3 +58,19 @@ a:active {
 		}
 	}
 }
+
+.footer {
+	color: var(--white);
+	line-height: rem(18);
+	letter-spacing: var(--spacing-big);
+
+	&__title {
+		font-size: var(--normal-font-size);
+		font-weight: var(--font-bold);
+	}
+
+	&__information,
+	&__copy {
+		font-size: var(--small-font-size);
+	}
+}
