@@ -27,12 +27,11 @@
 		list-style: none;
 		display: flex;
 		align-items: center;
+		gap: var(--m-1-5);
 	}
 
 	&__item {
 		text-decoration: none;
-		margin: var(--m-0-5);
-		padding: var(--m-0-5);
 	}
 
 	&__link {
