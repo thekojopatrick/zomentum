@@ -3,13 +3,20 @@
 
 .about {
 	background: var(--bg-light);
-	_display: grid;
+	display: grid;
+	grid-template-columns: repeat(11, minmax(min-content, 1fr));
+	grid-template-rows: repeat(4, 1fr);
+	justify-content: center;
+	align-items: center;
 	margin-top: rem(-60);
 	height: rem(561);
 
 	&__container {
 		text-align: center;
 		padding: rem(24);
+		grid-column: 4 / span 5;
+		grid-row: 1 /-1;
+		justify-self: center;
 	}
 
 	&__content {
@@ -38,6 +45,21 @@
 				width: rem(48);
 				height: rem(48);
 			}
+		}
+	}
+
+	&__image {
+		grid-row: 1/-1;
+		justify-self: center;
+		&--right {
+			grid-column: 9/-1;
+			transform: translateY(rem(-100));
+		}
+		&--left {
+			grid-column: 1 / span 4;
+			align-self: end;
+			transform: translate(-50%, -50%);
+			margin: rem(50);
 		}
 	}
 }
