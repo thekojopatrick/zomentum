@@ -8,19 +8,33 @@
 
 /*=============== NAV ===============*/
 .nav {
+	width: 100vw;
 	height: var(--header-height);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 
 	&__logo {
-		img {
-			width: rem(200);
-		}
+		width: rem(200);
 	}
 
-	&__close {
+	&__hamburger {
 		display: none;
+		font-size: rem(24);
+		text-align: center;
+		line-height: 1em;
+		padding: rem(8);
+		&:hover,
+		&:active {
+			background-color: var(--bg-dark);
+			color: var(--white);
+		}
+
+		&--close {
+			transform: translateX(rem(-20));
+			transition: all 0.3s ease-in;
+			opacity: 0;
+		}
 	}
 
 	&__list {
@@ -50,6 +64,36 @@
 		&-icon {
 			font-size: rem(16);
 			margin-right: var(--m-0-5);
+		}
+	}
+
+	@include breakpoint-down(small) {
+		position: fixed;
+		top: 0;
+		background: var(--white);
+		z-index: 100;
+		&__logo {
+			width: rem(200);
+		}
+
+		&__hamburger {
+			display: grid;
+			&--close {
+				transform: translateX(0);
+				opacity: 1;
+			}
+		}
+
+		&__list {
+			flex-direction: column;
+			position: absolute;
+			top: var(--header-height);
+			left: 0;
+			right: 0;
+			background: var(--white);
+			height: 70vh;
+			padding: rem(16);
+			opacity: 0;
 		}
 	}
 }
