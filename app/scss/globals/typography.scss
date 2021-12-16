@@ -60,7 +60,7 @@ a:active {
 			font-size: var(--h3-font-size);
 			font-weight: var(--font-bold);
 
-			@include breakpoint-down(small){
+			@include breakpoint-down(small) {
 				font-size: var(--h1-font-size);
 			}
 		}
@@ -87,6 +87,6 @@ a:active {
 
 	&__information,
 	&__copy {
-		font-size: var(--small-font-size);
+		font-size: var(--normal-font-size);
 	}
 }
