@@ -17,11 +17,13 @@ a:active {
 	&__title {
 		font-size: var(--big-font-size);
 		font-weight: var(--font-medium);
+		margin-bottom: var(--m-2);
 		line-height: rem(65);
 	}
 
 	&__description {
 		font-size: var(--normal-font-size);
+		margin-bottom: var(--m-1);
 		line-height: rem(30);
 	}
 	@include breakpoint-down(small) {

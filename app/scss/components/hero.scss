@@ -10,9 +10,9 @@
 	grid-template-columns: repeat(11, minmax(min-content, 1fr));
 	grid-template-rows: repeat(4, 1fr);
 	margin: 0 auto;
+	height: rem(640);
 
 	&__container {
-		height: rem(540);
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -48,6 +48,10 @@
 			grid-column: 1 / span 4;
 			justify-self: left;
 		}
+	}
+
+	@include breakpoint-down(medium) {
+		height: rem(720);
 	}
 
 	@include breakpoint-down(small) {

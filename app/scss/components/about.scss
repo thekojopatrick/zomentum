@@ -9,20 +9,22 @@
 	justify-content: center;
 	align-items: center;
 	margin-top: rem(-60);
-	height: rem(561);
+	padding: rem(32);
+	height: rem(600);
 
 	&__container {
 		text-align: center;
 		padding: rem(24);
-		grid-column: 4 / span 5;
+		grid-column: 3 / span 7;
 		grid-row: 1 /-1;
 		justify-self: center;
 	}
 
 	&__content {
 		display: flex;
-		justify-content: space-between;
+		gap: var(--m-1-5);
 		align-items: center;
+		justify-content: center;
 		margin-top: var(--m-2-5);
 	}
 
@@ -52,14 +54,22 @@
 		grid-row: 1/-1;
 		justify-self: center;
 		&--right {
-			grid-column: 9/-1;
+			grid-column: 10/-1;
 			transform: translateY(rem(-100));
 		}
 		&--left {
-			grid-column: 1 / span 4;
+			grid-column: 1 / span 3;
 			align-self: end;
 			transform: translate(-50%, -50%);
 			margin: rem(50);
+		}
+	}
+
+	@include breakpoint-down(medium) {
+	 
+		height: rem(920);
+		&__content {
+			flex-wrap: wrap;
 		}
 	}
 }
