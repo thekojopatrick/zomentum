@@ -22,7 +22,10 @@
 	}
 	&__content {
 		text-align: center;
-		width: rem(789);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 	&__button {
@@ -38,12 +41,16 @@
 		align-self: flex-end;
 		justify-self: center;
 		&--right {
-			grid-column: 9/-1;
+			grid-column: 8/-1;
 			transform: translateY(rem(-50));
 		}
 		&--left {
 			grid-column: 1 / span 4;
 			justify-self: left;
 		}
+	}
+
+	@include breakpoint-down(small) {
+		margin-top: var(--header-height);
 	}
 }

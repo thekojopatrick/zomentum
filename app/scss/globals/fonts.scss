@@ -26,6 +26,15 @@
 		--small-font-size: 0.875rem;
 		--smaller-font-size: 0.813rem;
 	}
+	@media screen and (max-width: 768px) {
+		--big-font-size: 2rem;
+		--h1-font-size: 1.5rem;
+		--h2-font-size: 1rem;
+		--h3-font-size: .5rem;
+		--normal-font-size: .8rem;
+		--small-font-size: 0.4rem;
+		--smaller-font-size: 0.3rem;
+	}
 
 	/*========== Font weight ==========*/
 	--font-medium: 500;
