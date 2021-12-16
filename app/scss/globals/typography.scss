@@ -57,8 +57,12 @@ a:active {
 .features {
 	&__details {
 		&-title {
-			font-size: rem(28);
+			font-size: var(--h3-font-size);
 			font-weight: var(--font-bold);
+
+			@include breakpoint-down(small){
+				font-size: var(--h1-font-size);
+			}
 		}
 
 		&-description {

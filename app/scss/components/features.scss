@@ -20,14 +20,10 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		flex-wrap: wrap;
+		_flex-wrap: wrap;
 		gap: rem(24);
 		padding: rem(24) 0;
 		margin: rem(48) 0;
-
-		&-image {
-			max-width: 100%;
-		}
 	}
 
 	&__details {
@@ -35,6 +31,20 @@
 
 		&-button {
 			color: var(--button-primary-color);
+		}
+	}
+
+	@include breakpoint-down(small) {
+		&__section {
+			justify-content: center;
+			flex-wrap: wrap;
+			text-align: center;
+			padding: rem(24) 0;
+			margin: rem(48) 0;
+		}
+
+		&__details {
+			width: 90%;
 		}
 	}
 }
