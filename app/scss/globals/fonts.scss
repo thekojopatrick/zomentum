@@ -17,15 +17,6 @@
 	--smaller-font-size: 0.75rem;
 
 	// Responsive typography
-	@media screen and (min-width: 968px) {
-		--big-font-size: 3rem;
-		--h1-font-size: 2.5rem;
-		--h2-font-size: 1.5rem;
-		--h3-font-size: 1.25rem;
-		--normal-font-size: 1rem;
-		--small-font-size: 0.875rem;
-		--smaller-font-size: 0.813rem;
-	}
 	@media screen and (max-width: 1149px) {
 		--big-font-size: 2rem;
 		--h1-font-size: 1.8rem;
@@ -34,6 +25,16 @@
 		--normal-font-size: 0.8rem;
 		--small-font-size: 0.4rem;
 		--smaller-font-size: 0.3rem;
+	}
+
+	@media screen and (min-width: 968px) {
+		--big-font-size: 3rem;
+		--h1-font-size: 2.5rem;
+		--h2-font-size: 1.5rem;
+		--h3-font-size: 1.25rem;
+		--normal-font-size: 1rem;
+		--small-font-size: 0.875rem;
+		--smaller-font-size: 0.813rem;
 	}
 
 	@media screen and (max-width: 768px) {
