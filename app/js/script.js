@@ -6,7 +6,7 @@ const navMenu = document.querySelector(".nav__list"),
 /* Validate if constant exists */
 if (navToggle) {
 	navToggle.addEventListener("click", () => {
-		navToggle.classList.contains("ri-menu-line") ? showMenu() : removeMenu();
+		navToggle.classList.contains("ri-menu-line") ? showMenu() : hideMenu();
 	});
 }
 
@@ -32,3 +32,12 @@ function linkAction() {
 	hideMenu();
 }
 navLink.forEach((link) => link.addEventListener("click", linkAction));
+
+/*============ CHANGE HEADER POSITION =========*/
+function scrollHeader() {
+	const header = document.querySelector(".header");
+	// When the scroll is greater than 80px viewport height, add the scroll-header class to the header tag
+	if (this.scrollY >= 80) header.classList.add("scroll-header");
+	else header.classList.remove("scroll-header");
+}
+window.addEventListener("scroll", scrollHeader);
