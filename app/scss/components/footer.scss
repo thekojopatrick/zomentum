@@ -6,6 +6,7 @@
 	background: var(--bg-dark);
 	width: 100%;
 	padding: rem(64) rem(32);
+	opacity: 0;
 
 	&__container {
 		display: flex;
@@ -24,5 +25,4 @@
 	&__note {
 		margin-top: rem(48);
 	}
-
 }

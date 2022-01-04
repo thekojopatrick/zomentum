@@ -41,3 +41,39 @@ function scrollHeader() {
 	else header.classList.remove("scroll-header");
 }
 window.addEventListener("scroll", scrollHeader);
+
+/*============= SCROLL REVEAL ANIMATION ==============*/
+let prevRatio = 0.0;
+window.addEventListener(
+	"load",
+	() => {
+		let aboutSection = document.getElementById("section-about");
+		let features = document.querySelectorAll("article");
+		let footerElement = document.getElementById("footer");
+		createObserver(aboutSection);
+		features.forEach((f) => {
+			createObserver(f);
+		});
+		createObserver(footerElement);
+	},
+	false
+);
+
+function createObserver(target) {
+	let options = {
+		root: null, //null means use default device viewport as root element
+		rootMargin: "0px",
+		threshold: [0, 0.5, 1.0], //threshold of 1.0 means that when 100% of the target is visible within the element specified by the root option
+	};
+	let observer = new IntersectionObserver(handleIntersect, options);
+	observer.observe(target);
+}
+
+function handleIntersect(entries, observer) {
+	entries.forEach((entry) => {
+		if (entry.intersectionRatio > prevRatio) {
+			entry.target.classList.add("animate");
+		}
+		prevRatio = entry.intersectionRatio;
+	});
+}
